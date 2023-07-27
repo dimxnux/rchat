@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    # default db
+    url: jdbc:h2:./h2db;AUTO_SERVER=TRUE
+#    url:
+#    username:
+#    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+app:
+  frontend-origin: http://localhost:3000
