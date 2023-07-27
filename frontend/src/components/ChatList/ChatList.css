@@ -1,0 +1,27 @@
+.left {
+    display: flex;
+    flex-flow: column;
+    flex: 0 400px;
+    background: #779ef2;
+    height: 100%;
+    margin-right: 5px
+}
+
+h1 {
+    text-align: center;
+}
+
+.chats {
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.chat {
+    background: #4339ff;
+    width: 95%;
+    height: 60px;
+    cursor: pointer;
+}

@@ -4,7 +4,7 @@ module.exports = {
     'es2021': true,
   },
   'extends': [
-    'google',
+    'eslint:recommended',
     'plugin:react/recommended',
   ],
   'overrides': [
@@ -28,7 +28,13 @@ module.exports = {
     'react',
   ],
   'rules': {
-    "require-jsdoc": 'off'
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "never"
+    }]
   },
   'settings': {
     'react': {

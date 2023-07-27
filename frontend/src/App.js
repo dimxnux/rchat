@@ -1,14 +1,21 @@
 import React, {useState} from 'react';
+import './App.css';
+import ChatList from './components/ChatList';
+import ChatRightPanel from './components/ChatRightPanel';
+import ChatRightPanelPlaceholder from './components/ChatRightPanelPlaceholder';
 
 function App() {
-  const [counter, setCounter] = useState(0);
+  const [activeChat, setActiveChat] = useState(null);
 
   return (
-      <>
-        <h1>Chat</h1>
-        <p>{counter}</p>
-        <button onClick={() => setCounter(counter + 1)}>Button</button>
-      </>
+    <>
+      <div className="container">
+        <ChatList setActiveChat={setActiveChat} />
+        {activeChat
+          ? <ChatRightPanel activeChat={activeChat} />
+          : <ChatRightPanelPlaceholder />}
+      </div>
+    </>
   );
 }
 

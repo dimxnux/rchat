@@ -1,0 +1,19 @@
+.message {
+    width: fit-content;
+}
+
+.message .sender-info {
+    display: flex;
+}
+
+.message .sender-info > div {
+    align-self: center;
+}
+
+.message .message-content {
+    display: flex;
+}
+
+.message.me {
+    align-self: flex-end;
+}
