@@ -55,8 +55,8 @@ public class Chat {
                 ? ((HibernateProxy) this).getHibernateLazyInitializer().getPersistentClass()
                 : this.getClass();
         if (thisEffectiveClass != oEffectiveClass) return false;
-        User user = (User) o;
-        return getId() != null && Objects.equals(getId(), user.getId());
+        Chat chat = (Chat) o;
+        return getId() != null && Objects.equals(getId(), chat.getId());
     }
 
     @Override
